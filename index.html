@@ -9,6 +9,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
 <body>
@@ -148,7 +149,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border border-0 shadow-lg h-100">
-                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <img id="image"  src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
                             <h2>$160</h2>
@@ -185,7 +186,7 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-buy-now">Buy Now</div>
+                            <div onclick="removeButton('event3')" class="btn panda-btn-buy-now event3">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -206,7 +207,7 @@
                                 additional content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-buy-now">Buy Now</div>
+                            <div onclick="removeButton('event4')" class="btn panda-btn-buy-now event4">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +221,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-buy-now">Buy Now</div>
+                            <div onclick="removeButton('event5')" class="btn panda-btn-buy-now event5">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +236,7 @@
                                 height action.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn panda-btn-buy-now">Buy Now</div>
+                            <div onclick="removeButton('event6')" class="btn panda-btn-buy-now event6">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -243,15 +244,15 @@
         </section>
         <!-- Backpack Section End -->
         <!-- Subscribe start -->
-        <section style="height: 300px;" class="container rounded-3 d-flex justify-content-center align-items-center panda-bg-info" id="subscribe">
+        <section ondblclick="subscribe()"  style="height: 300px;" class="container rounded-3 d-flex justify-content-center align-items-center panda-bg-info" id="subscribe">
             <div>
                 <h2>LET'S STAY IN TOUCH</h2>
                 <p>Get updates on sales, specials and more</p>
                 <form>
                     <div class="mb-1">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input onkeyup="cheakEmail()"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn panda-btn-buy-now">Submit</button>
+                    <button id="button" disabled type="submit" class="btn panda-btn-buy-now">Submit</button>
                 </form>
             </div>
         </section>
